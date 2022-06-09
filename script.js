@@ -47,7 +47,7 @@ class detalleNdias{
         return tax;
     }
     mostrarDetalle(){
-        return 'Room ID: '+ this.room.id + '\nNro de dias alq: ' + this.nroDias + ' x  $ '+ this.room.roomPrice()+ ' = '+ this.calcularSubtotal()+'-Euros' + '\nTaxes: ' + ' $ '+this.calcularTax()+'-Euros'+'\n';
+        return 'Detalle por Operacion:\n'+'\nRoom ID: '+ this.room.id + '\nNro de dias alq: ' + this.nroDias + ' x  $ '+ this.room.roomPrice()+ ' = '+ this.calcularSubtotal()+'-Euros' + '\nTaxes: ' + ' $ '+this.calcularTax()+'-Euros'+'\n';
     }
 }
 
@@ -101,7 +101,7 @@ class acumTotal{
         for(const BT of this.detalleFinal){
         text += BT.mostrarDetalle() + '\n';
         }
-        text += 'Resumen de Acumulados Semanal: '+ this.fecha +'\nTotal de dias Alquilados: ' + this.calcularDaysTotal()+' dias.' +'\nIngresos Totales por alquiler: $ '+ this.calcularAmountTotal()+'-Euros' +'\nTotal de Comisiones: $ '+ this.calcularTaxTotal()+'-Euros';
+        text += 'Resumen de Acumulado Semanal: '+ this.fecha +'\nTotal de dias Alquilados: ' + this.calcularDaysTotal()+' dias.' +'\nIngresos Totales por alquiler: $ '+ this.calcularAmountTotal()+'-Euros' +'\nTotal de Comisiones: $ '+ this.calcularTaxTotal()+'-Euros';
         return text
     }
 
