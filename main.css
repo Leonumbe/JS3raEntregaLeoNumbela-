@@ -38,10 +38,14 @@ font-family: 'Poppins', sans-serif;*/
   }
   .navbar .logo a{
     color:#353d45;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 600;
     text-decoration: none;
     align-items: center;
+    transition: all 0.3s ease;
+  }
+  .navbar .logo a:hover{
+    transform: scale(5.5);
   }
   .navbar .logo a span{
     color: rgb(220, 0, 240);
@@ -90,9 +94,8 @@ font-family: 'Poppins', sans-serif;*/
   .home .carousel{
     position: relative;
   }
-  .home .carousel img{
+  .home .carousel-inner img{
     max-height: 700px;
-    width: 100%;
   }
   .home .max-width{
     margin: auto 0 auto 40px;
